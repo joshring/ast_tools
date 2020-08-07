@@ -1,4 +1,7 @@
 class unroll:
+    """
+    wrapper returns an iterator
+    """
     def __init__(self, _iter):
         self._iter = _iter
 

@@ -9,4 +9,9 @@ class SymbolReplacer(NodeReplacer):
             return None
 
 def replace_symbols(tree, symbol_table):
-    return SymbolReplacer(symbol_table).visit(tree)
+    """
+    variables defined in the symbol_table, matched on the keys, 
+    will be replaced with the value defined within.
+    all other variables will be unchanged
+    """
+    return SymbolReplacer(node_table = symbol_table).visit(tree)

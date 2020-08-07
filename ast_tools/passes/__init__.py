@@ -7,5 +7,6 @@ from .ssa import *
 from .cse import *
 from .util import *
 from .loop_unroll import loop_unroll
+from .loop_unroll import loop_unroll_by_factor
 from .if_inline import if_inline
 from .remove_asserts import remove_asserts
